@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="target">
+
+</div>
+<script src="script.js"></script>
+<script>
+    var test = triggerVisability({
+        selector: '.target',
+        interval: 1000,
+        percentOnScreen: 25,
+        callback: function (data) {
+            console.log(data.counter + '\n' + data.visiablePart);
+        }
+    });
+
+    test();
+</script>
+<style>
+    html {
+        height: 250vh;
+    }
+    .target {
+        height: 100px;
+        margin-top: 110vh;
+        background-color: #94fffa;
+    }
+</style>
+</body>
+</html>
