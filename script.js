@@ -10,13 +10,7 @@ function triggerVisability( options ) {
         counter: 0,
         visiablePart: 0,
     };
-    var counter = 0;
 
-    if(options.selector.indexOf('#'))
-
-        function incCounter() {
-            return counter++;
-        }
     function getCoordsSize(el) { // кроме IE8-
         var box = el.getBoundingClientRect();
         var elwidth = el.offsetWidth;
